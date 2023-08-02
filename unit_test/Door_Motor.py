@@ -25,17 +25,17 @@ class MotorDriver():
             GPIO.output(self.DIG1, GPIO.LOW)
             GPIO.output(self.DIG2, GPIO.HIGH)
             self.p1.ChangeDutyCycle(self.max_speed)
-            sleep(3)
+            sleep(2)
         elif on == False:
             GPIO.output(self.DIG1, GPIO.HIGH)
             GPIO.output(self.DIG2, GPIO.LOW)
             self.p1.ChangeDutyCycle(self.max_speed)
-            sleep(3)
+            sleep(2)
         else:
             GPIO.output(self.DIG1, GPIO.LOW)
             GPIO.output(self.DIG2, GPIO.LOW)
             self.p1.ChangeDutyCycle(0)
-            sleep(3)
+            sleep(2)
             
         self.p1.stop()
 #         GPIO.cleanup()
