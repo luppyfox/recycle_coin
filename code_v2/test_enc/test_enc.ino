@@ -14,7 +14,7 @@
 #define LIM 8
 
 int pos = 0;
-int set_pwm = 255;
+int set_pwm = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -26,7 +26,7 @@ void setup() {
   delay(2000);
 //  for (int i; i <= 2000; i++) {
   while(digitalRead(LIM) == 0){
-    setMotor(-1, set_pwm, PWM, IN1, IN2);
+    setMotor(1, set_pwm, PWM, IN1, IN2);
 //    delay(1);
     Serial.println(pos);
   }
