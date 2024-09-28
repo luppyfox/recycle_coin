@@ -1,4 +1,4 @@
-# Smart-bin
+# Recycle coin - Smart-bin
 Smart city, waste management
 
 Servo mg996r 180degree :
